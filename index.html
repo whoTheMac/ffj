@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+</head>
+<style>
+    #button{
+        border: rgba(86, 82, 82, 0.627) solid 2px;
+margin-left: 630px;
+padding: 10px;
+font-size: 20px;
+font-family: Georgia;
+background-color: rgba(202, 205, 203, 0.34);
+border-radius: 10px;
+color: olive;
+    }
+    h1{
+        color: olive;
+margin-left: 670px;
+margin-top: 300px;
+font-size: 100px;
+        
+    }
+</style>
+<body>
+    <h1 id="number">-</h1>
+    <button onclick="display()" id="button">Roll the dice</button>
+    <script>
+        function display(){
+            var number=Math.floor(Math.random()*6)+1;
+            console.log(number)
+            document.getElementById("number").innerHTML=number;
+        }
+    </script>
+</body>
+</html>
